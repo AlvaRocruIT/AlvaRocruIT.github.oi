@@ -268,11 +268,12 @@ text-align: justify; /* Justifica el texto */
     margin-top: 0.35cm; /* Espacio entre el texto y los cuadrados */
 }
 
-.square {
-    width: 2cm; /* Ancho de los cuadrados */
-    height: 2cm; /* Alto de los cuadrados */
-    background-color: #555; /* Color gris oscuro */
+.pre-footer-image {
+    width: 2cm; /* Ajusta el tamaño de la imagen */
+    height: 2cm; /* Puedes ajustar la altura también, o eliminar esta línea para mantener la proporción */
+    margin: 10px; /* Espaciado entre las imágenes */
     border-radius: 0.4cm; /* Esquinas redondeadas */
+    display: inline-block; /* Asegura que las imágenes se alineen horizontalmente */
 }
 
 .gold-line2 {
