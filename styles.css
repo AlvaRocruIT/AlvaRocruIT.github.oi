@@ -25,7 +25,7 @@ body {
 .header {
     width: 100%;
     height: 4.76cm; /* Proporción ajustada */
-    background-image: url(Images/Image1.jpg);
+    background-image: url('Images/Image1.jpg');
     background-size: cover; /* Asegura que la imagen cubra todo el espacio */
     background-position: center; /* Centra la imagen */
     position: relative; /* Para posicionar el círculo dentro del header */
@@ -34,7 +34,7 @@ body {
 .profile-pic {
     width: 4.7cm; /* Diámetro del círculo */
     height: 4.7cm; /* Diámetro del círculo */
-    background-image: url(Images/Image2.jpg); /* Color gris oscuro */
+    background-image: url('Images/Image2.jpg'); /* Color gris oscuro */
     border-radius: 50%; /* Hacerlo circular */
     background-size: cover; /* Asegura que la imagen cubra todo el espacio */
     border-radius: 50%; /* Hacerlo circular */
@@ -57,7 +57,7 @@ body {
 .dark-square {
     width: 1cm; /* Ancho del cuadrado */
     height: 1cm; /* Alto del cuadrado */
-    background-image: url(Images/Image3.png); /* Color azul oscuro */
+    background-image: url('Images/Image3.png'); /* Color azul oscuro */
    background-size: cover; /* Asegura que la imagen cubra todo el espacio */
     background-position: center; /* Centra la imagen */
     position: absolute; /* Posicionamiento absoluto */
