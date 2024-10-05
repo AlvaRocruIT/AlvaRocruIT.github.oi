@@ -238,42 +238,35 @@ text-align: justify; /* Justifica el texto */
 
 .pre-footer {
     background-color: #F4F2EE; /* Color de fondo */
-    height: 3.5cm; /* Altura de la barra */
-    display: flex; /* Usar Flexbox para centrar el texto */
-    align-items: flex-start; /* Alinear el contenido al inicio (parte superior) */
-    justify-content: center; /* Centrar el contenido horizontalmente */
-    padding-top: 0.2cm; /* Espacio en la parte superior */
- clear: both;
+    height: 3.7cm; /* Altura de la barra */
+    margin-top: 19cm; /* Espacio superior si es necesario */
+    clear: both; /* Asegurarse de que flote correctamente */
+    display: flex; /* Usar Flexbox */
+    flex-direction: column; /* Alinear en columna */
+    align-items: center; /* Centrar contenido horizontalmente */
 }
 
-.pre-footer {
-    background-color: #F4F2EE; /* Color de fondo */
-    height: 3.7cm; /* Altura de la barra */
-   font-family: 'Segoe UI Variable Small Semibold', sans-serif; /* Fuente del texto de metodología */
+.pre-footer-text {
+    font-family: 'Segoe UI Variable Small Semibold', sans-serif; /* Fuente del texto de metodología */
     font-size: 17px; /* Tamaño de la fuente */
     color: #0A66C2; /* Color blanco */
     display: flex; /* Usar Flexbox para centrar el texto */
     align-items: center; /* Alinear el contenido al inicio (parte superior) */
     justify-content: center; /* Centrar el contenido horizontalmente */
-    padding-top: 0.001cm; /* Espacio en la parte superior */
-    margin-top: 19cm; /* Espacio superior si es necesario */
-    clear: both; /* Asegurarse de que flote correctamente */
-    flex-direction: column;
+    padding-top: 0.2cm; /* Espacio en la parte superior */
 }
 
-.squares-container {
-    display: flex; /* Usar Flexbox para alinear los cuadrados */
-    justify-content: center; /* Centrar los cuadrados horizontalmente */
-    gap: 1.8cm; /* Espacio entre los cuadrados */
-    margin-top: 0.35cm; /* Espacio entre el texto y los cuadrados */
+.pre-footer-images {
+    display: flex; /* Usar Flexbox para alinear imágenes en fila */
+    justify-content: center; /* Centrar horizontalmente */
+    gap: 1.8cm; /* Espacio entre imágenes */
+    margin-top: 0.5cm; /* Espacio entre el texto y las imágenes */
 }
 
 .pre-footer-image {
     width: 2cm; /* Ajusta el tamaño de la imagen */
     height: 2cm; /* Puedes ajustar la altura también, o eliminar esta línea para mantener la proporción */
-    margin: 10px; /* Espaciado entre las imágenes */
     border-radius: 0.4cm; /* Esquinas redondeadas */
-    display: inline-block; /* Asegura que las imágenes se alineen horizontalmente */
 }
 
 .gold-line2 {
