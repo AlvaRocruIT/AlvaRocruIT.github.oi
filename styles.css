@@ -239,7 +239,6 @@ text-align: justify; /* Justifica el texto */
 .pre-footer {
     background-color: #F4F2EE; /* Color de fondo */
     height: 3.7cm; /* Altura de la barra */
-    margin-top: 19cm; /* Espacio superior si es necesario */
     clear: both; /* Asegurarse de que flote correctamente */
     display: flex; /* Usar Flexbox */
     flex-direction: column; /* Alinear en columna */
