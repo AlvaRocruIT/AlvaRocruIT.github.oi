@@ -34,7 +34,7 @@ body {
 .profile-pic {
     width: 4.7cm; /* Diámetro del círculo */
     height: 4.7cm; /* Diámetro del círculo */
-    background-image: url('Images/Image2.jpg'); /* Color gris oscuro */
+    background-image: url('Images/Image2.JPG'); /* Color gris oscuro */
     border-radius: 50%; /* Hacerlo circular */
     background-size: cover; /* Asegura que la imagen cubra todo el espacio */
     border-radius: 50%; /* Hacerlo circular */
@@ -55,13 +55,13 @@ body {
 }
 
 .dark-square {
-    width: 1cm; /* Ancho del cuadrado */
-    height: 1cm; /* Alto del cuadrado */
+    width: 1.5cm; /* Ancho del cuadrado */
+    height: 1.5cm; /* Alto del cuadrado */
     background-image: url('Images/Image3.png'); /* Color azul oscuro */
    background-size: cover; /* Asegura que la imagen cubra todo el espacio */
     background-position: center; /* Centra la imagen */
     position: absolute; /* Posicionamiento absoluto */
-    top: calc(4.76cm + 1cm); /* 7.5 mm debajo del header */
+    top: calc(4.76cm + 0.75cm); /* 7.5 mm debajo del header */
     right: 1cm; /* 1 cm del borde derecho */
     z-index: 2; /* Asegurar que esté por encima de otros elementos */
 }
