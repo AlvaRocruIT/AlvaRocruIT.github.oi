@@ -249,6 +249,7 @@ body {
     display: flex; /* Usar Flexbox */
     flex-direction: column; /* Alinear en columna */
     align-items: center; /* Centrar contenido horizontalmente */
+    position: relative;
 }
 
 .pre-footer-text {
@@ -278,8 +279,7 @@ body {
    width: 100%; /* Ancho igual que el header */
     height: 0.13cm; /* Altura de la línea */
     background-color: #F9C982; /* Color dorado */
-    position: absolute; /* Para que esté encima del footer */
-    bottom: 1; /* Pegado al fondo */
+    margin-top: -1;
 }
 
 .footer {
@@ -288,6 +288,7 @@ body {
     display: flex; /* Usar Flexbox para centrar el texto */
     align-items: center; /* Centrar verticalmente el texto */
     justify-content: center; /* Centrar horizontalmente el texto */
+    position: relative;
 }
 
 .footer-text {
