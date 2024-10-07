@@ -7,13 +7,18 @@
 body {
     background-color: #F4F2EE;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     font-family: Arial, sans-serif;
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between; /* Espacia los elementos de arriba hacia abajo */
     width: 19.05cm;
     height: 27.9cm;
     background-color: #FFFFFF;
@@ -87,7 +92,7 @@ body {
 
 .text-box {
     position: absolute; /* Posicionamiento absoluto para el cuadro de texto 1 */
-  top: calc(7.7cm); /* 1.5 cm debajo del subtítulo */
+    top: calc(7.7cm); /* 1.5 cm debajo del subtítulo */
     left: 1cm; /* 1 cm del borde izquierdo */
     right: 1.5cm; /* 1.5 cm del borde derecho */
     background-color: #DDE7F1; /* Color celeste */
@@ -211,7 +216,7 @@ body {
 
 .content {
     display: none; /* Ocultar el contenido por defecto */
-text-align: justify; /* Justifica el texto */
+    text-align: justify; /* Justifica el texto */
     margin-right: 1.5cm; /* Espacio a la derecha */
     margin-left: 0; /* Alineación a la izquierda */
     font-family: 'Segoe UI', sans-serif; /* Fuente del texto de descripción */
@@ -237,6 +242,7 @@ text-align: justify; /* Justifica el texto */
 }
 
 .pre-footer {
+    margin-top: auto;
     background-color: #F4F2EE; /* Color de fondo */
     height: 3.7cm; /* Altura de la barra */
     clear: both; /* Asegurarse de que flote correctamente */
