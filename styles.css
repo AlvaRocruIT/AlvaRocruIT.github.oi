@@ -7,13 +7,18 @@
 body {
     background-color: #F4F2EE;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     font-family: Arial, sans-serif;
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between; /* Espacia los elementos de arriba hacia abajo */
     width: 19.05cm;
     height: 27.9cm;
     background-color: #FFFFFF;
@@ -25,7 +30,7 @@ body {
 .header {
     width: 100%;
     height: 4.76cm; /* Proporción ajustada */
-    background-image: url(C:\Users\56961\Desktop\WebPages\BrochureGH\Images\Image1.jpg);
+    background-image: url('Images/Image1.jpg');
     background-size: cover; /* Asegura que la imagen cubra todo el espacio */
     background-position: center; /* Centra la imagen */
     position: relative; /* Para posicionar el círculo dentro del header */
@@ -34,7 +39,7 @@ body {
 .profile-pic {
     width: 4.7cm; /* Diámetro del círculo */
     height: 4.7cm; /* Diámetro del círculo */
-      background-image: url(C:\Users\56961\Desktop\WebPages\BrochureGH\Images\Image2.jpg); /* Color gris oscuro */
+    background-image: url('Images/Image2.JPG'); /* Color gris oscuro */
     border-radius: 50%; /* Hacerlo circular */
     background-size: cover; /* Asegura que la imagen cubra todo el espacio */
     border-radius: 50%; /* Hacerlo circular */
@@ -55,15 +60,18 @@ body {
 }
 
 .dark-square {
-    width: 1cm; /* Ancho del cuadrado */
-    height: 1cm; /* Alto del cuadrado */
-    background-image: url(C:\Users\56961\Desktop\WebPages\BrochureGH\Images\Image3.jpg); /* Color azul oscuro */
-   background-size: cover; /* Asegura que la imagen cubra todo el espacio */
+    display: block;
+    width: 1.5cm; /* Ancho del cuadrado */
+    height: 1.5cm; /* Alto del cuadrado */
+    background-image: url('Images/Image3.png'); /* Color azul oscuro */
+    background-size: cover; /* Asegura que la imagen cubra todo el espacio */
     background-position: center; /* Centra la imagen */
+    text decoration: none;
     position: absolute; /* Posicionamiento absoluto */
-    top: calc(4.76cm + 1cm); /* 7.5 mm debajo del header */
-    right: 1cm; /* 1 cm del borde derecho */
+    top: calc(4.76cm + 0.75cm); /* 7.5 mm debajo del header */
+    right: 1.5cm; /* 1.5 cm del borde derecho */
     z-index: 2; /* Asegurar que esté por encima de otros elementos */
+    cursor: pointer;
 }
 
 .name {
@@ -87,7 +95,7 @@ body {
 
 .text-box {
     position: absolute; /* Posicionamiento absoluto para el cuadro de texto 1 */
-  top: calc(7.7cm); /* 1.5 cm debajo del subtítulo */
+    top: calc(7.7cm); /* 1.5 cm debajo del subtítulo */
     left: 1cm; /* 1 cm del borde izquierdo */
     right: 1.5cm; /* 1.5 cm del borde derecho */
     background-color: #DDE7F1; /* Color celeste */
@@ -158,6 +166,7 @@ body {
     justify-content: center;
     align-items: center;
     position: relative; /* Para posicionar el número dentro del rectángulo */
+    cursor: pointer;
 }
 
 .left-rectangle, .right-rectangle {
@@ -186,11 +195,14 @@ body {
     margin: 0.1cm;
 }
 
-.left-rectangle .number {
-    position: absolute; /* Para permitir el posicionamiento */
-    top: 0; /* Alinear al borde superior */
-    right: 0; /* Alinear al borde derecho */
-    margin: 0.1cm; /* Espacio alrededor del número */
+.left-rectangle-number {
+    font-family: 'Segoe UI Variable Small Semibold', sans-serif;
+    font-size: 28px;
+    color: #000000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0.1cm;
 }
 
 .bullet-points {
@@ -211,7 +223,7 @@ body {
 
 .content {
     display: none; /* Ocultar el contenido por defecto */
-text-align: justify; /* Justifica el texto */
+    text-align: justify; /* Justifica el texto */
     margin-right: 1.5cm; /* Espacio a la derecha */
     margin-left: 0; /* Alineación a la izquierda */
     font-family: 'Segoe UI', sans-serif; /* Fuente del texto de descripción */
@@ -237,50 +249,44 @@ text-align: justify; /* Justifica el texto */
 }
 
 .pre-footer {
-    background-color: #F4F2EE; /* Color de fondo */
-    height: 3.5cm; /* Altura de la barra */
-    display: flex; /* Usar Flexbox para centrar el texto */
-    align-items: flex-start; /* Alinear el contenido al inicio (parte superior) */
-    justify-content: center; /* Centrar el contenido horizontalmente */
-    padding-top: 0.2cm; /* Espacio en la parte superior */
- clear: both;
-}
-
-.pre-footer {
+    margin-top: auto;
     background-color: #F4F2EE; /* Color de fondo */
     height: 3.7cm; /* Altura de la barra */
-   font-family: 'Segoe UI Variable Small Semibold', sans-serif; /* Fuente del texto de metodología */
+    clear: both; /* Asegurarse de que flote correctamente */
+    display: flex; /* Usar Flexbox */
+    flex-direction: column; /* Alinear en columna */
+    align-items: center; /* Centrar contenido horizontalmente */
+    position: relative;
+}
+
+.pre-footer-text {
+    font-family: 'Segoe UI Variable Small Semibold', sans-serif; /* Fuente del texto de metodología */
     font-size: 17px; /* Tamaño de la fuente */
     color: #0A66C2; /* Color blanco */
     display: flex; /* Usar Flexbox para centrar el texto */
     align-items: center; /* Alinear el contenido al inicio (parte superior) */
     justify-content: center; /* Centrar el contenido horizontalmente */
-    padding-top: 0.001cm; /* Espacio en la parte superior */
-    margin-top: 19cm; /* Espacio superior si es necesario */
-    clear: both; /* Asegurarse de que flote correctamente */
-    flex-direction: column;
+    padding-top: 0.2cm; /* Espacio en la parte superior */
 }
 
-.squares-container {
-    display: flex; /* Usar Flexbox para alinear los cuadrados */
-    justify-content: center; /* Centrar los cuadrados horizontalmente */
-    gap: 1.8cm; /* Espacio entre los cuadrados */
-    margin-top: 0.35cm; /* Espacio entre el texto y los cuadrados */
+.pre-footer-images {
+    display: flex; /* Usar Flexbox para alinear imágenes en fila */
+    justify-content: center; /* Centrar horizontalmente */
+    gap: 1.8cm; /* Espacio entre imágenes */
+    margin-top: 0.5cm; /* Espacio entre el texto y las imágenes */
 }
 
-.square {
-    width: 2cm; /* Ancho de los cuadrados */
-    height: 2cm; /* Alto de los cuadrados */
-    background-color: #555; /* Color gris oscuro */
+.pre-footer-image {
+    width: 2cm; /* Ajusta el tamaño de la imagen */
+    height: 2cm; /* Puedes ajustar la altura también, o eliminar esta línea para mantener la proporción */
     border-radius: 0.4cm; /* Esquinas redondeadas */
 }
 
-.gold-line2 {
-   width: 100%; /* Ancho igual que el header */
+  .gold-line2 {
+    width: 100%; /* Ancho igual que el header */
     height: 0.13cm; /* Altura de la línea */
     background-color: #F9C982; /* Color dorado */
-    position: absolute; /* Para que esté encima del footer */
-    bottom: 1; /* Pegado al fondo */
+    margin-top: -1;
 }
 
 .footer {
@@ -289,6 +295,7 @@ text-align: justify; /* Justifica el texto */
     display: flex; /* Usar Flexbox para centrar el texto */
     align-items: center; /* Centrar verticalmente el texto */
     justify-content: center; /* Centrar horizontalmente el texto */
+    position: relative;
 }
 
 .footer-text {
