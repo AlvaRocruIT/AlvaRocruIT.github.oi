@@ -60,15 +60,18 @@ body {
 }
 
 .dark-square {
+    display: block;
     width: 1.5cm; /* Ancho del cuadrado */
     height: 1.5cm; /* Alto del cuadrado */
     background-image: url('Images/Image3.png'); /* Color azul oscuro */
-   background-size: cover; /* Asegura que la imagen cubra todo el espacio */
+    background-size: cover; /* Asegura que la imagen cubra todo el espacio */
     background-position: center; /* Centra la imagen */
+    text decoration: none;
     position: absolute; /* Posicionamiento absoluto */
     top: calc(4.76cm + 0.75cm); /* 7.5 mm debajo del header */
     right: 1.5cm; /* 1.5 cm del borde derecho */
     z-index: 2; /* Asegurar que esté por encima de otros elementos */
+    cursor: pointer;
 }
 
 .name {
@@ -163,6 +166,7 @@ body {
     justify-content: center;
     align-items: center;
     position: relative; /* Para posicionar el número dentro del rectángulo */
+    cursor: pointer;
 }
 
 .left-rectangle, .right-rectangle {
@@ -191,11 +195,14 @@ body {
     margin: 0.1cm;
 }
 
-.left-rectangle .number {
-    position: absolute; /* Para permitir el posicionamiento */
-    top: 0; /* Alinear al borde superior */
-    right: 0; /* Alinear al borde derecho */
-    margin: 0.1cm; /* Espacio alrededor del número */
+.left-rectangle-number {
+    font-family: 'Segoe UI Variable Small Semibold', sans-serif;
+    font-size: 28px;
+    color: #000000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0.1cm;
 }
 
 .bullet-points {
@@ -275,8 +282,8 @@ body {
     border-radius: 0.4cm; /* Esquinas redondeadas */
 }
 
-.gold-line2 {
-   width: 100%; /* Ancho igual que el header */
+  .gold-line2 {
+    width: 100%; /* Ancho igual que el header */
     height: 0.13cm; /* Altura de la línea */
     background-color: #F9C982; /* Color dorado */
     margin-top: -1;
