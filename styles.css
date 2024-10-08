@@ -47,7 +47,7 @@
         flex-direction: column; /* Alinear en columna los elementos */
     }
 }
-@media (max-width: 480px) {
+@media (min-width: 481px) and (max-width: 768px) {
     .container {
         height: 100%; /* Cambia a 100% para usar el ancho total */
         padding: 0.5rem;
