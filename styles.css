@@ -48,8 +48,14 @@
     }
 }
 @media (max-width: 480px) {
+    body {
+        margin: 0; /* Elimina el margen del body */
+        padding: 0; /* Elimina el padding del body */
+        overflow-x: hidden; /* Evita el desplazamiento horizontal */
+    }
+    
     .container {
-        width: 90%; /* Cambia a 90% o menos si es necesario */
+        width: auto%; /* 
         aspect-ratio: 16 / 9;
         padding: 1rem; /* Ajusta el padding para móviles */
     }
