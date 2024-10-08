@@ -53,11 +53,12 @@
         padding: 0; /* Elimina el padding del body */
         overflow-x: hidden; /* Evita el desplazamiento horizontal */
     }
-    
+
     .container {
-        width: auto%; /* 
-        aspect-ratio: 16 / 9;
-        padding: 1rem; /* Ajusta el padding para móviles */
+        width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+        padding: 0.5rem; /* Mantiene el padding */
+        box-sizing: border-box; /* Asegura que el padding no sume al ancho total */
     }
 
     .name, .subtitle, .description-header, .description-text {
