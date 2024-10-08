@@ -49,7 +49,7 @@
 }
 @media (max-width: 480px) {
     .container {
-        width: 100%; /* Cambia a 100% para usar el ancho total */
+        height: 100%; /* Cambia a 100% para usar el ancho total */
         padding: 0.5rem;
         flex-wrap: wrap; /* Permite que los elementos se ajusten en múltiples filas */
     }
