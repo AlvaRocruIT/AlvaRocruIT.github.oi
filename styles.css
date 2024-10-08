@@ -77,7 +77,7 @@ body {
     background-position: center; /* Centra la imagen */
     text decoration: none;
     position: absolute; /* Posicionamiento absoluto */
-    top: calc(12.78vh + 2.02vh = 14.8vh); /* 7.5 mm debajo del header */
+    top: calc(16.9vh); /* 7.5 mm debajo del header */
     right: 4.05vh; /* 1.5 cm del borde derecho */
     z-index: 2; /* Asegurar que esté por encima de otros elementos */
     cursor: pointer;
@@ -131,7 +131,7 @@ body {
 
 .methodology-box {
     position: absolute; /* Posicionamiento absoluto para el cuadro de texto de metodología */
-    top: calc(33.97vh); /* Espaciado adecuado debajo del primer cuadro de texto */
+    top: calc(34.97vh); /* Espaciado adecuado debajo del primer cuadro de texto */
     left: 2.68vh; /* 1 cm del borde izquierdo */
     width: 19.38vh; /* Ancho del cuadro */
     height: 2.68vh; /* Alto del cuadro */
