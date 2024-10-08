@@ -66,11 +66,6 @@
         font-size: 0.9rem; /* Tamaño de fuente más pequeño para dispositivos móviles */
     }
 
-    img {
-        max-width: 100%; /* Asegúrate de que las imágenes no se salgan del contenedor */
-        height: auto; /* Mantiene la relación de aspecto */
-    }
-
     /* ---------------fin------------------*/
 }
 * {
