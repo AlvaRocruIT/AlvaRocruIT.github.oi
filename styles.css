@@ -1,3 +1,98 @@
+/* Para pantallas de tablets y dispositivos de tamaño mediano */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Ajusta el ancho al 90% del ancho del viewport */
+        height: auto; /* Permitir que la altura sea flexible */
+        padding: 1rem; /* Añadir algo de espacio */
+    }
+
+    .header {
+        height: 3.5cm; /* Ajustar la altura para pantallas más pequeñas */
+    }
+
+    .profile-pic {
+        width: 3cm;
+        height: 3cm; /* Reduce el tamaño para móviles */
+        bottom: -1.5cm;
+    }
+
+    .dark-square {
+        width: 1cm; /* Ajusta el tamaño */
+        height: 1cm;
+    }
+
+    .name {
+        font-size: 20px; /* Reducir el tamaño de la fuente */
+        left: 50%;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+
+    .text-box {
+        font-size: 14px; /* Reducir el tamaño del texto */
+        padding: 1rem;
+    }
+
+    .methodology-box {
+        width: 100%; /* Aumentar el ancho a la totalidad */
+        height: auto;
+    }
+
+    .rectangle-box {
+        left: 2.5cm;
+    }
+
+    .footer {
+        flex-direction: column; /* Alinear en columna los elementos */
+    }
+}
+
+/* Para pantallas móviles */
+@media (max-width: 480px) {
+    .container {
+        width: 95%; /* Más estrecho para móviles */
+        padding: 0.5rem;
+    }
+
+    .header {
+        height: 2.5cm; /* Altura aún más pequeña */
+    }
+
+    .profile-pic {
+        width: 2.5cm;
+        height: 2.5cm;
+        bottom: -1.25cm;
+    }
+
+    .name {
+        font-size: 18px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+
+    .text-box, .methodology-box {
+        font-size: 12px;
+        padding: 0.5rem;
+    }
+
+    .rectangle {
+        width: 1.5cm;
+        height: 2cm; /* Ajusta los rectángulos */
+    }
+
+    .bullet-points {
+        font-size: 12px;
+    }
+
+    .pre-footer {
+        flex-direction: column;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
