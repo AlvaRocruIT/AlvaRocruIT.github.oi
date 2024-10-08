@@ -65,6 +65,7 @@
     .text-box, .methodology-box {
         font-size: 12px;
         padding: 0.5rem;
+    }
     .name, .subtitle, .description-header, .description-text {
         font-size: 1rem; /* Ajusta el tamaño de fuente si es necesario */
         text-align: center; /* Centra el texto si quieres un diseño más limpio */
