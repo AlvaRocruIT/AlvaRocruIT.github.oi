@@ -63,7 +63,7 @@
         padding: 1rem; /* Ajusta el padding para móviles */
     }
 
-    .name, .subtitle, {
+    .name, .subtitle, .description-header, .description-text {
         font-size: 1rem; /* Ajusta el tamaño de fuente si es necesario */
         text-align: center; /* Centra el texto si quieres un diseño más limpio */
     }
@@ -71,18 +71,11 @@
     .bullet-point {
         font-size: 0.9rem; /* Tamaño de fuente más pequeño para dispositivos móviles */
     }
-    
     @media (min-width: 481px) and (max-width: 768px) {
     /* Estilos específicos para pantallas 18:9 */
     .container {
         padding: 1.5rem;
     }
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 * {
@@ -107,7 +100,7 @@ body {
     flex-grow: 1;
     justify-content: space-between; /* Espacia los elementos de arriba hacia abajo */
     width: 19.05cm;
-    height: 34.67cm;
+    height: 27.9cm;
     background-color: #FFFFFF;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 0;
@@ -187,7 +180,7 @@ body {
     right: 1.5cm; /* 1.5 cm del borde derecho */
     background-color: #DDE7F1; /* Color celeste */
     border-radius: 0.85cm; /* Esquinas redondeadas */
-    padding: 0.6cm; /* Espaciado interno */
+    padding: 0.4cm; /* Espaciado interno */
 }
 
 .description-header {
@@ -210,7 +203,7 @@ body {
 
 .methodology-box {
     position: absolute; /* Posicionamiento absoluto para el cuadro de texto de metodología */
-    top: calc(13.16cm); /* Espaciado adecuado debajo del primer cuadro de texto */
+    top: calc(12.66cm); /* Espaciado adecuado debajo del primer cuadro de texto */
     left: 1cm; /* 1 cm del borde izquierdo */
     width: 7.2cm; /* Ancho del cuadro */
     height: 1cm; /* Alto del cuadro */
@@ -238,7 +231,7 @@ body {
 
 .rectangle-box {
     position: absolute;
-    top: calc(15.16cm);
+    top: calc(14.66cm);
     left: 3.6cm;
     display: flex;
     flex-direction: column;
@@ -294,7 +287,7 @@ body {
 
 .bullet-points {
     position: absolute; /* Posicionamiento absoluto para colocar la sección */
-    top: calc(15.16cm); /* Alineación con el rectángulo 1 */
+    top: calc(14.56cm); /* Alineación con el rectángulo 1 */
     left: calc(8.4cm); /* 0.5 cm desde el borde derecho del rectángulo 3 */
     max-width: calc(100% - 1.5cm);
     font-family: 'Segoe UI Variable Small Semibold', sans-serif; /* Fuente para los títulos */
