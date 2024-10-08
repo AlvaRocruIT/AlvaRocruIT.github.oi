@@ -71,6 +71,11 @@
     .bullet-point {
         font-size: 0.9rem; /* Tamaño de fuente más pequeño para dispositivos móviles */
     }
+    @media (min-width: 481px) and (max-width: 768px) {
+    /* Estilos específicos para pantallas 18:9 */
+    .container {
+        padding: 1.5rem;
+    }
 }
 
 * {
