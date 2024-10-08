@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media  (min-width: 481px) and (max-width: 768px) {
     .container {
         width: 100%; /* Ajusta el ancho al 100% del ancho del viewport */
         height: auto; /* Permitir que la altura sea flexible */
@@ -47,11 +47,14 @@
         flex-direction: column; /* Alinear en columna los elementos */
     }
 }
-@media (min-width: 481px) and (max-width: 768px) {
+@media (max-width: 481px)
     .container {
-        height: 100%; /* Cambia a 100% para usar el ancho total */
-        padding: 0.5rem;
-        flex-wrap: wrap; /* Permite que los elementos se ajusten en múltiples filas */
+         width: 90%; /* O usa '100vw' para ancho completo */
+         height: auto; /* Permite que la altura se ajuste al contenido */ 
+         display: flex; /* O usa display: grid; */
+        flex-direction: column; /* O 'row' según el diseño */
+        justify-content: center; /* Centra los elementos */
+        align-items: center; /* Centra horizontalmente */
     }
 
     .name, .subtitle {
