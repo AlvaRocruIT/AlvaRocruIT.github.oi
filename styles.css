@@ -71,11 +71,6 @@
     .bullet-point {
         font-size: 0.9rem; /* Tamaño de fuente más pequeño para dispositivos móviles */
     }
-    
-    .pre-footer-images img {
-        width: 100%; /* Asegúrate de que las imágenes se ajusten al ancho */
-        height: auto; /* Mantén la relación de aspecto */
-    }
 }
 
 * {
