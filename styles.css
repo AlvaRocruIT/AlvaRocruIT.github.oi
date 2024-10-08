@@ -50,7 +50,6 @@
 @media (max-width: 480px) {
     .container {
         width: 90%; /* Cambia a 90% o menos si es necesario */
-        aspect-ratio: 16 / 9;
         padding: 1rem; /* Ajusta el padding para móviles */
     }
 
