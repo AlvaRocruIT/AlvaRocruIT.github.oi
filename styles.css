@@ -50,7 +50,8 @@
 @media (max-width: 480px) {
     .container {
         width: 90%; /* Cambia a 90% o menos si es necesario */
-        padding: 1rem; /* Ajusta el padding para móviles */
+        height: calc(100vw * 9 / 16); /* Ajusta la altura basada en el ancho */
+        padding: 0.5rem;
     }
 
     .name, .subtitle {
