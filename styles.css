@@ -26,6 +26,15 @@ body {
     padding: 0;
     position: relative; /* Posicionamiento relativo para el círculo */
 }
+@media (max-width: 600px) {
+    body {
+        font-size: 12px; /* Ajustar tamaño de fuente en pantallas pequeñas */
+    }
+
+    .container {
+        padding: 10px; /* Ajustar padding en pantallas pequeñas */
+    }
+}
 
 .header {
     width: 100%;
