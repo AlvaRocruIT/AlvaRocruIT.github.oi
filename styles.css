@@ -73,12 +73,13 @@
     .rectangle {
         width: 1.5cm;
         height: 2cm; /* Ajusta los rectángulos */
+    }
     .bullet-point {
         font-size: 0.9rem; /* Tamaño de fuente más pequeño para dispositivos móviles */
     }
     .bullet-points {
         font-size: 12px;
-    
+    }
     .pre-footer-images img {
         width: 100%; /* Asegúrate de que las imágenes se ajusten al ancho */
         height: auto; /* Mantén la relación de aspecto */
