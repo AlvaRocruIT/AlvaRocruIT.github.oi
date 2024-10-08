@@ -1,6 +1,6 @@
 @media (max-width: 768px) {
     .container {
-        width: 90%; /* Ajusta el ancho al 90% del ancho del viewport */
+        width: 100%; /* Ajusta el ancho al 100% del ancho del viewport */
         height: auto; /* Permitir que la altura sea flexible */
         padding: 1rem; /* Añadir algo de espacio */
     }
@@ -49,8 +49,8 @@
 }
 @media (max-width: 480px) {
     .container {
-        width: 90%; /* Cambia a 90% o menos si es necesario */
-        height: calc(100vw * 9 / 16); /* Ajusta la altura basada en el ancho */
+        width: 100%; /* Cambia a 100% para usar el ancho total */
+        height: calc(100vw * 9 / 16); /* Mantiene la proporción 16:9 */
         padding: 0.5rem;
     }
 
@@ -62,9 +62,14 @@
     .bullet-point {
         font-size: 0.9rem; /* Tamaño de fuente más pequeño para dispositivos móviles */
     }
+
+    img {
+        max-width: 100%; /* Asegúrate de que las imágenes no se salgan del contenedor */
+        height: auto; /* Mantiene la relación de aspecto */
+    }
+
     /* ---------------fin------------------*/
 }
-
 * {
     margin: 0;
     padding: 0;
