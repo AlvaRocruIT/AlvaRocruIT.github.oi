@@ -1,3 +1,70 @@
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Ajusta el ancho al 90% del ancho del viewport */
+        height: auto; /* Permitir que la altura sea flexible */
+        padding: 1rem; /* Añadir algo de espacio */
+    }
+
+    .header {
+        height: 3.5cm; /* Ajustar la altura para pantallas más pequeñas */
+    }
+
+    .profile-pic {
+        width: 3cm;
+        height: 3cm; /* Reduce el tamaño para móviles */
+        bottom: -1.5cm;
+    }
+
+    .dark-square {
+        width: 1cm; /* Ajusta el tamaño */
+        height: 1cm;
+    }
+
+    .name {
+        font-size: 20px; /* Reducir el tamaño de la fuente */
+        left: 50%;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+
+    .text-box {
+        font-size: 14px; /* Reducir el tamaño del texto */
+        padding: 1rem;
+    }
+
+    .methodology-box {
+        width: 100%; /* Aumentar el ancho a la totalidad */
+        height: auto;
+    }
+
+    .rectangle-box {
+        left: 2.5cm;
+    }
+
+    .footer {
+        flex-direction: column; /* Alinear en columna los elementos */
+    }
+}
+@media (max-width: 480px) {
+    .container {
+        width: 90%; /* Cambia a 90% o menos si es necesario */
+        aspect-ratio: 16 / 9;
+        padding: 1rem; /* Ajusta el padding para móviles */
+    }
+
+    .name, .subtitle, .description-header, .description-text {
+        font-size: 1rem; /* Ajusta el tamaño de fuente si es necesario */
+        text-align: center; /* Centra el texto para un diseño más limpio */
+    }
+
+    .bullet-point {
+        font-size: 0.9rem; /* Tamaño de fuente más pequeño para dispositivos móviles */
+    }
+    /* ---------------fin------------------*/
+}
+
 * {
     margin: 0;
     padding: 0;
