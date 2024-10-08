@@ -2,7 +2,7 @@
     .container {
         width: 90%; /* Ajusta el ancho al 90% del ancho del viewport */
         height: auto; /* Permitir que la altura sea flexible */
-        padding: 1rem; /* Añadir algo de espacio */
+        padding: 0.5rem; /* Añadir algo de espacio */
     }
 
     .header {
