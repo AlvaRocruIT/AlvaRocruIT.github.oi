@@ -1,3 +1,61 @@
+/* Para pantallas de tablets y dispositivos de tamaño mediano */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Ajusta el ancho al 90% del ancho del viewport */
+        height: auto; /* Permitir que la altura sea flexible */
+        padding: 1rem; /* Añadir algo de espacio */
+    }
+
+    .header {
+        height: 3.5cm; /* Ajustar la altura para pantallas más pequeñas */
+    }
+
+    .profile-pic {
+        width: 3cm;
+        height: 3cm; /* Reduce el tamaño para móviles */
+        bottom: -1.5cm;
+    }
+
+    .dark-square {
+        width: 1cm; /* Ajusta el tamaño */
+        height: 1cm;
+    }
+
+    .name {
+        font-size: 20px; /* Reducir el tamaño de la fuente */
+        left: 50%;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+
+    .text-box {
+        font-size: 14px; /* Reducir el tamaño del texto */
+        padding: 1rem;
+    }
+
+    .methodology-box {
+        width: 100%; /* Aumentar el ancho a la totalidad */
+        height: auto;
+    }
+
+    .rectangle-box {
+        left: 2.5cm;
+    }
+
+    .footer {
+        flex-direction: column; /* Alinear en columna los elementos */
+    }
+}
+
+/* Estilo base para .container */
+.container {
+    max-width: 1200px; /* O el ancho máximo que desees */
+    margin: 0 auto; /* Centra el contenedor */
+    padding: 2rem; /* Espaciado interno */
+}
+
 /* Para pantallas móviles */
 @media (max-width: 480px) {
     .container {
@@ -18,5 +76,316 @@
         width: 100%; /* Asegúrate de que las imágenes se ajusten al ancho */
         height: auto; /* Mantén la relación de aspecto */
     }
-} */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F4F2EE;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between; /* Espacia los elementos de arriba hacia abajo */
+    width: 19.05cm;
+    height: 27.9cm;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 0;
+    position: relative; /* Posicionamiento relativo para el círculo */
+}
+
+.header {
+    width: 100%;
+    height: 4.76cm; /* Proporción ajustada */
+    background-image: url('Images/Image1.jpg');
+    background-size: cover; /* Asegura que la imagen cubra todo el espacio */
+    background-position: center; /* Centra la imagen */
+    position: relative; /* Para posicionar el círculo dentro del header */
+}
+
+.profile-pic {
+    width: 4.7cm; /* Diámetro del círculo */
+    height: 4.7cm; /* Diámetro del círculo */
+    background-image: url('Images/Image2.JPG'); /* Color gris oscuro */
+    border-radius: 50%; /* Hacerlo circular */
+    background-size: cover; /* Asegura que la imagen cubra todo el espacio */
+    border-radius: 50%; /* Hacerlo circular */
+    position: absolute; /* Posicionamiento absoluto */
+    bottom: -2.35cm; /* Colocar el círculo en la parte inferior */
+    left: 1.5cm; /* Espaciado desde la izquierda */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Sombra para el círculo */
+    z-index: 1; /* Asegurar que el círculo esté encima */
+}
+
+.gold-line {
+    width: 100%; /* Ancho igual que el header */
+    height: 1.3mm; /* Altura de la línea */
+    background-color: #F9C982; /* Color dorado */
+    position: relative; /* Para que la línea esté debajo del círculo */
+    top: -1mm; /* Elevar la línea para que pase detrás del círculo */
+    z-index: 0; /* Asegurar que la línea esté detrás */
+}
+
+.dark-square {
+    display: block;
+    width: 1.5cm; /* Ancho del cuadrado */
+    height: 1.5cm; /* Alto del cuadrado */
+    background-image: url('Images/Image3.png'); /* Color azul oscuro */
+    background-size: cover; /* Asegura que la imagen cubra todo el espacio */
+    background-position: center; /* Centra la imagen */
+    text decoration: none;
+    position: absolute; /* Posicionamiento absoluto */
+    top: calc(4.76cm + 0.75cm); /* 7.5 mm debajo del header */
+    right: 1.5cm; /* 1.5 cm del borde derecho */
+    z-index: 2; /* Asegurar que esté por encima de otros elementos */
+    cursor: pointer;
+}
+
+.name {
+    position: absolute; /* Posicionamiento absoluto para el nombre */
+    top: calc(5.36cm); /* 5 mm debajo del header */
+    left: 10cm; /* Centrando horizontalmente */
+    transform: translateX(-50%); /* Ajuste para centrar */
+    font-family: 'Segoe UI Variable Small Semibold', sans-serif; /* Fuente del nombre */
+    font-size: 24px; /* Tamaño de la fuente */
+    color: #000000; /* Color negro */
+}
+
+.subtitle {
+    position: absolute; /* Posicionamiento absoluto para el subtítulo */
+    top: calc(6.16cm); /* Un poco más debajo del nombre */
+    left: 6.6cm; /* Alineado a la izquierda del nombre */
+    font-family: 'Segoe UI', sans-serif; /* Fuente del subtítulo */
+    font-size: 20px; /* Tamaño de la fuente */
+    color: #000000; /* Color negro */
+}
+
+.text-box {
+    position: absolute; /* Posicionamiento absoluto para el cuadro de texto 1 */
+    top: calc(7.7cm); /* 1.5 cm debajo del subtítulo */
+    left: 1cm; /* 1 cm del borde izquierdo */
+    right: 1.5cm; /* 1.5 cm del borde derecho */
+    background-color: #DDE7F1; /* Color celeste */
+    border-radius: 0.85cm; /* Esquinas redondeadas */
+    padding: 0.4cm; /* Espaciado interno */
+}
+
+.description-header {
+    font-family: 'Segoe UI Variable Small Semibold', sans-serif; /* Fuente de la descripción */
+    font-size: 17px; /* Tamaño de la fuente */
+    color: #000000; /* Color negro */
+}
+
+.description-text {
+    font-family: 'Segoe UI', sans-serif; /* Fuente del texto de descripción */
+    font-size: 17px; /* Tamaño de la fuente */
+    color: #000000; /* Color negro */
+}
+
+.interest-question {
+    font-family: 'Segoe UI Variable Small Semibold', sans-serif; /* Fuente de la pregunta de interés */
+    font-size: 18px; /* Tamaño de la fuente */
+    color: #3882CC; /* Color azul */
+}
+
+.methodology-box {
+    position: absolute; /* Posicionamiento absoluto para el cuadro de texto de metodología */
+    top: calc(12.66cm); /* Espaciado adecuado debajo del primer cuadro de texto */
+    left: 1cm; /* 1 cm del borde izquierdo */
+    width: 7.2cm; /* Ancho del cuadro */
+    height: 1cm; /* Alto del cuadro */
+    background-color: #0A66C2; /* Color de fondo */
+    border-radius: 0.45cm; /* Esquinas redondeadas */
+    display: flex; /* Para centrar el contenido */
+    align-items: center; /* Centrado vertical */
+    padding-left: 0.4cm; /* Espacio interno a la izquierda */
+}
+
+.methodology-text {
+    font-family: 'Segoe UI Variable Small Semibold', sans-serif; /* Fuente del texto de metodología */
+    font-size: 17px; /* Tamaño de la fuente */
+    color: #FFFFFF; /* Color blanco */
+    margin-left: 0.2cm; /* Espacio entre la flecha y el texto */
+}
+
+.methodology-arrow {
+    font-family: 'Segoe UI Variable Small Semibold', sans-serif; /* Fuente del texto de metodología */
+    font-size: 18px; /* Tamaño de la fuente */
+    color: #FFFFFF; /* Color blanco */
+    text-align: center; /* Centra el texto dentro de la div */
+    margin-bottom: px; /* Espacio debajo de la flecha */
+}
+
+.rectangle-box {
+    position: absolute;
+    top: calc(14.66cm);
+    left: 3.6cm;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4cm;
+}
+
+.rectangle {
+    width: 2.2cm;
+    height: 2.6cm;
+    background-color: #DDE7F1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Para posicionar el número dentro del rectángulo */
+    cursor: pointer;
+}
+
+.left-rectangle, .right-rectangle {
+    position: absolute;
+}
+
+.left-rectangle {
+    top: 50%;
+    transform: translateY(-50%);
+    right: calc(100% + 0.2cm); /* Posición izquierda */
+}
+
+.right-rectangle {
+    top: 50%;
+    transform: translateY(-50%);
+    left: calc(100% + 0.2cm); /* Posición derecha */
+}
+
+.number {
+    font-family: 'Segoe UI Variable Small Semibold', sans-serif;
+    font-size: 28px;
+    color: #000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0.1cm;
+}
+
+.left-rectangle-number {
+    font-family: 'Segoe UI Variable Small Semibold', sans-serif;
+    font-size: 28px;
+    color: #000000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0.1cm;
+}
+
+.bullet-points {
+    position: absolute; /* Posicionamiento absoluto para colocar la sección */
+    top: calc(14.56cm); /* Alineación con el rectángulo 1 */
+    left: calc(8.4cm); /* 0.5 cm desde el borde derecho del rectángulo 3 */
+    max-width: calc(100% - 1.5cm);
+    font-family: 'Segoe UI Variable Small Semibold', sans-serif; /* Fuente para los títulos */
+    font-size: 17px; /* Tamaño de la fuente */
+    color: #A6CAEC; /* Color del texto */
+}
+
+.bullet-point {
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    margin-bottom: 0.22cm; /* Espacio entre las viñetas */
+    padding-left: 0.44cm; /* Espaciado a la izquierda para las viñetas */
+}
+
+.content {
+    display: none; /* Ocultar el contenido por defecto */
+    text-align: justify; /* Justifica el texto */
+    margin-right: 1.5cm; /* Espacio a la derecha */
+    margin-left: 0; /* Alineación a la izquierda */
+    font-family: 'Segoe UI', sans-serif; /* Fuente del texto de descripción */
+    font-size: 12px; /* Tamaño de la fuente */
+    color: #000000; /* Color negro */
+    padding-right: 1.5 cm; /* Margen a la derecha */
+    padding-left: 0.44cm; /* Espaciado a la izquierda igual al padding de .bullet-point */
+    position: relative; /* Para posicionar los párrafos */
+    width: calc(100% - 1.5cm); /* Asegura que no exceda el ancho del contenedor */
+    box-sizing: border-box; /* Incluye padding y border en el tamaño total */
+}
+
+.visible {
+    display: block; /* Clase para mostrar el contenido */
+}
+
+.shift {
+    margin-left: 0.5cm; /* Ajusta este valor según sea necesario */
+}
+
+.shadow {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Efecto de sombra */
+}
+
+.pre-footer {
+    margin-top: auto;
+    background-color: #F4F2EE; /* Color de fondo */
+    height: 3.7cm; /* Altura de la barra */
+    clear: both; /* Asegurarse de que flote correctamente */
+    display: flex; /* Usar Flexbox */
+    flex-direction: column; /* Alinear en columna */
+    align-items: center; /* Centrar contenido horizontalmente */
+    position: relative;
+}
+
+.pre-footer-text {
+    font-family: 'Segoe UI Variable Small Semibold', sans-serif; /* Fuente del texto de metodología */
+    font-size: 17px; /* Tamaño de la fuente */
+    color: #0A66C2; /* Color blanco */
+    display: flex; /* Usar Flexbox para centrar el texto */
+    align-items: center; /* Alinear el contenido al inicio (parte superior) */
+    justify-content: center; /* Centrar el contenido horizontalmente */
+    padding-top: 0.2cm; /* Espacio en la parte superior */
+}
+
+.pre-footer-images {
+    display: flex; /* Usar Flexbox para alinear imágenes en fila */
+    justify-content: center; /* Centrar horizontalmente */
+    gap: 1.8cm; /* Espacio entre imágenes */
+    margin-top: 0.5cm; /* Espacio entre el texto y las imágenes */
+}
+
+.pre-footer-image {
+    width: 2cm; /* Ajusta el tamaño de la imagen */
+    height: 2cm; /* Puedes ajustar la altura también, o eliminar esta línea para mantener la proporción */
+    border-radius: 0.4cm; /* Esquinas redondeadas */
+}
+
+  .gold-line2 {
+    width: 100%; /* Ancho igual que el header */
+    height: 0.13cm; /* Altura de la línea */
+    background-color: #F9C982; /* Color dorado */
+    margin-top: -1;
+}
+
+.footer {
+    background-color: #0A66C2; /* Color de fondo de la barra */
+    height: 1cm; /* Altura del footer */
+    display: flex; /* Usar Flexbox para centrar el texto */
+    align-items: center; /* Centrar verticalmente el texto */
+    justify-content: center; /* Centrar horizontalmente el texto */
+    position: relative;
+}
+
+.footer-text {
+    font-family: 'Segoe UI Variable Small', sans-serif; /* Tipo de fuente */
+    font-size: 17px; /* Tamaño de la fuente */
+    color: #FFFFFF; /* Color del texto */
+    margin: 0; /* Eliminar márgenes por defecto */
+}
+
+.contact-me {
+    text-decoration: underline; /* Subrayar el texto */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra del texto */
 }
