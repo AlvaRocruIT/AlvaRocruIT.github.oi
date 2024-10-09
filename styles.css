@@ -49,9 +49,9 @@
 }
 @media (max-width: 481px) {
     .container {
-         width: 90%;  /* O usa '100vw' para ancho completo */
-         height: auto;  /* Permite que la altura se ajuste al contenido */ 
-         display: flex; /* O usa display: grid; */
+        width: 90%;  /* O usa '100vw' para ancho completo */
+        height: auto;  /* Permite que la altura se ajuste al contenido */ 
+        display: flex; /* O usa display: grid; */
         flex-direction: column; /* O 'row' según el diseño */
         justify-content: center; /* Centra los elementos */
         align-items: center; /* Centra horizontalmente */
