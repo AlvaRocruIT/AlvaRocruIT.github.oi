@@ -191,7 +191,7 @@ body {
 
 .methodology-box {
     position: absolute; /* Posicionamiento absoluto para el cuadro de texto de metodología */
-    top: calc(12.66cm); /* Espaciado adecuado debajo del primer cuadro de texto */
+    top: calc(14.66cm); /* Espaciado adecuado debajo del primer cuadro de texto */
     left: 1cm; /* 1 cm del borde izquierdo */
     width: 7.2cm; /* Ancho del cuadro */
     height: 1cm; /* Alto del cuadro */
@@ -219,7 +219,7 @@ body {
 
 .rectangle-box {
     position: absolute;
-    top: calc(14.66cm);
+    top: calc(15.66cm);
     left: 3.6cm;
     display: flex;
     flex-direction: column;
