@@ -219,7 +219,7 @@ body {
 
 .rectangle-box {
     position: absolute;
-    top: calc(15.66cm);
+    top: calc(17.66cm);
     left: 3.6cm;
     display: flex;
     flex-direction: column;
